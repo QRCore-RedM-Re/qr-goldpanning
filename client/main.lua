@@ -48,11 +48,11 @@ AddEventHandler('qr-GoldPanner:StartPaning', function()
                 w = math.random(12,28)
                 local seconds = w/1
                 for i=1,seconds,1 do
-                    TriggerEvent("vorp:Tip", "Finding gold.", 500)
+                    QBCore.Functions.Notify("Finding Gold...", 'info')
                     Wait(335)
-                    TriggerEvent("vorp:Tip", "Finding gold..", 500)
+                    QBCore.Functions.Notify("Finding Gold...", 'info')
                     Wait(335) 
-                    TriggerEvent("vorp:Tip", "Finding gold...", 500)
+                    QBCore.Functions.Notify("Finding Gold...", 'info')
                     Wait(335) 
                 end
                 -- Wait(w)
@@ -65,7 +65,7 @@ AddEventHandler('qr-GoldPanner:StartPaning', function()
         end
         Panning = false
         if foundwater == false then
-            TriggerEvent("vorp:TipBottom", "You cant find gold here", 10000)
+            QBCore.Functions.Notify("You Can\'t Find Gold Here", 'error')
         end
     end
 end)
