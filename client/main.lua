@@ -48,11 +48,11 @@ AddEventHandler('qr-GoldPanner:StartPaning', function()
                 w = math.random(12,28)
                 local seconds = w/1
                 for i=1,seconds,1 do
-                    QBCore.Functions.Notify("Finding Gold...", 'info')
+                    QRCore.Functions.Notify("Finding Gold...", 'primary')
                     Wait(335)
-                    QBCore.Functions.Notify("Finding Gold...", 'info')
+                    QRCore.Functions.Notify("Finding Gold...", 'primary')
                     Wait(335) 
-                    QBCore.Functions.Notify("Finding Gold...", 'info')
+                    QRCore.Functions.Notify("Finding Gold...", 'primary')
                     Wait(335) 
                 end
                 -- Wait(w)
